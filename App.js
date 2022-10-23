@@ -13,7 +13,6 @@ export default class App extends Component {
         <Header />
         <Post image={require('./assets/image/test.png')}></Post>
       
-      <Author email='francisquerahumild@gmail.com' nickname= 'Chiquin69'/>
       </View>
     );
   }
