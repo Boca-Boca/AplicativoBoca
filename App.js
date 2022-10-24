@@ -8,10 +8,23 @@ import Author from './src/components/Author';
 
 export default class App extends Component {
   render() {
+
+const comments = [{
+  nickname:'Juaumzin',
+  comment: 'Lucas ta me devendo uma mamada'
+},
+ {
+  nickname:'Marombeiro crente',
+  comment: "pra vc tambem?"
+}
+]
+
     return (
-      <View>
+      <View style={{flex:1}}>
         <Header />
-        <Post image={require('./assets/image/test.png')}></Post>
+        <Post image={require('./assets/image/test.jpg')}
+        comments={comments}
+        ></Post>
       
       </View>
     );

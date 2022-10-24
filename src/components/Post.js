@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {StyleSheet, View, Image, Dimensions} from 'react-native';
-
-class Post extends Comment {
+import Comments from './Comments';
+import Author from './Author';
+class Post extends Component {
   render() {
     return (
-      <View>
+      <View style= {styles.Container}>
         <Image
-          source={this.compareDocumentPosition.image}
+          source={this.props.image}
           style={styles.image}
         />
               <Author email='francisquerahumild@gmail.com' nickname= 'Chiquin69'/>
-
+              <Comments comments={this.props.comments}/>
       </View>
     );
   }
@@ -18,11 +19,11 @@ class Post extends Comment {
 
 const styles = StyleSheet.create({
   Container: {
-    flex: 1,
+    flex: 1
   },
   image: {
     width: Dimensions.get('window').width,
-    height: (Dimensions.get('window').width * 3) / 4,
+    height:Dimensions.get('window').width * 3 / 4,
     resizeMode: 'contain',
   },
 });
