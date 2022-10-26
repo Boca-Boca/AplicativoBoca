@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import Header from './src/components/header';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import Post from './src/components/Post';
-import Author from './src/components/Author';
 
 
 
