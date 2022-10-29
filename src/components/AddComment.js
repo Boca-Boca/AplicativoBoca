@@ -9,6 +9,8 @@ import {
   Alert
 } from 'react-native';
 
+import MaterialIcon from 'react-native-vector-icons/EvilIcons'
+
 
 class AddComment extends Component {
   state = {
@@ -35,6 +37,9 @@ class AddComment extends Component {
           />
 
           <TWF onPress={() => this.setState({editMode: false})}>
+        
+          <MaterialIcon name='close-o' size={15} color='#555'/>
+
           </TWF>
         </View>
       );
@@ -42,11 +47,7 @@ class AddComment extends Component {
       commentArea = (
         <TWF onPress={() => this.setState({editMode: true})}>
           <View style={styles.container}>
-
-
-
-
-
+          <MaterialIcon name='comment' size={25} color='#555'/>
             <Text style={styles.caption}>Adicione um comentário ...</Text>
           </View>
         </TWF>
@@ -62,6 +63,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 10,
+    paddingBottom: 8
   },
   caption: {
     marginLeft: 10,
@@ -70,6 +72,7 @@ const styles = StyleSheet.create({
   },
   input: {
     width: '90%',
+
   },
 
 });
