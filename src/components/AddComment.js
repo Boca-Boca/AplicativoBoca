@@ -9,7 +9,7 @@ import {
   Alert
 } from 'react-native';
 
-import MaterialIcon from 'react-native-vector-icons/EvilIcons'
+import MaterialIcon from 'react-native-vector-icons/MaterialIcons'
 
 
 class AddComment extends Component {
@@ -38,7 +38,7 @@ class AddComment extends Component {
 
           <TWF onPress={() => this.setState({editMode: false})}>
         
-          <MaterialIcon name='close-o' size={15} color='#555'/>
+          <MaterialIcon name='close' size={15} color='#555'/>
 
           </TWF>
         </View>
