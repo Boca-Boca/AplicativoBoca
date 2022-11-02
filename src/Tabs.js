@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Feed from './screens/Feed';
+import AddPhoto from './screens/AddPhoto';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 
 const Tab = createBottomTabNavigator();
@@ -39,7 +40,7 @@ export default function Routes(){
 
       <Tab.Screen
         name="AddPhoto"
-        component={Feed}
+        component={AddPhoto}
         options={{
           tabBarIcon: ({size, color}) => (
             <MaterialIcon
