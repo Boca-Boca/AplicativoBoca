@@ -5,8 +5,6 @@ import Author from './Author';
 import AddComment from './AddComment';
 
 
-
-
 class Post extends Component {
   render() {
     return (

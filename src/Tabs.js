@@ -4,8 +4,14 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Feed from './screens/Feed';
 import AddPhoto from './screens/AddPhoto';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
+import Profile from './screens/Profile';
+import Login from './screens/Login';
+import { createSwitchNavigator } from 'react-navigation';
 
 const Tab = createBottomTabNavigator();
+
+
+
 
 export default function Routes(){
   return (
@@ -54,7 +60,7 @@ export default function Routes(){
 
       <Tab.Screen
         name="Profile"
-        component={Feed}
+        component={Profile}
         options={{
           tabBarIcon: ({size, color}) => (
             <MaterialIcon name="person" size={size} color={color} />
